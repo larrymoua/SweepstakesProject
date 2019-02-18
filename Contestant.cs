@@ -36,9 +36,9 @@ namespace SweepStakes
             Console.WriteLine($"Registration Number : {RegistrationNumber}");
             Console.ReadLine();
         }
-        public void GetUpdate(string winorlose)
+        public void GetUpdate(string notification)
         {
-            Console.WriteLine(winorlose);
+            Console.WriteLine(notification);
         }
     }
 }

@@ -8,6 +8,6 @@ namespace SweepStakes
 {
      public interface INotificationcs
     {
-        void GetUpdate(string winorlose)
+        void GetUpdate(string notification);
     }
 }
