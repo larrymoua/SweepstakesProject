@@ -19,8 +19,10 @@ namespace SweepStakes
             switch (input)
             {
                 case "queue":
+                    SweepstakesQueueManager sweepstakesQueueManager = new SweepstakesQueueManager();
                     break;
                 case "stack":
+                    SweepStakesStackManager
                     break;
                 default:
                     break;

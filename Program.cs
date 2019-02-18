@@ -13,12 +13,16 @@ namespace SweepStakes
             Contestant firstContestant = new Contestant();
             Contestant secondContestant = new Contestant();
             Contestant thirdContestant = new Contestant();
-            SweepStakes sweepStakes = new SweepStakes("Bucks");
-            sweepStakes.RegisterContestant(firstContestant);
-            sweepStakes.RegisterContestant(secondContestant);
-            sweepStakes.RegisterContestant(thirdContestant);
-            sweepStakes.PrintContestantInfo();
-            
+            SweepStakes sweepStakes1 = new SweepStakes("Bucks");
+            sweepStakes1.RegisterContestant(firstContestant);
+            sweepStakes1.RegisterContestant(secondContestant);
+            sweepStakes1.RegisterContestant(thirdContestant);
+
+            SweepStakes sweepStakes2 = new SweepStakes("Packers");
+            sweepStakes2.RegisterContestant(firstContestant);
+            sweepStakes2.RegisterContestant(secondContestant);
+
+
         }
     }
 }

@@ -26,6 +26,8 @@ namespace SweepStakes
             FirstName = UserInterfacecs.GetString("Enter your first name.");
             LastName = UserInterfacecs.GetString("Enter your last name.");
             EmailAddress = UserInterfacecs.GetString("Enter your email address.");
+            Console.ReadLine();
+            Console.Clear();
         }
         public void DisplayContestantInfo()
         {
