@@ -8,24 +8,22 @@ namespace SweepStakes
 {
     class MarketingFirm
     {
-        public MarketingFirm()
+        List<ISweepstakesManager> sweepstakesManagers;
+        ISweepstakesManager sweepstakesManager;
+        public MarketingFirm(ISweepstakesManager sweepstakesManager)
         {
-
+            sweepstakesManagers = new List<ISweepstakesManager>();
+            this.sweepstakesManager = sweepstakesManager;
         }
-        public void ChooseStackOrQueue()
+        public void AddSweepsStakes()
         {
-            string input = UserInterfacecs.GetString("Do you want to use queue or stack manager?");
-            input.ToLower();
-            switch (input)
+            sweepstakesManagers.Add(sweepstakesManager);
+        }
+        public void PrepareManager()
+        {
+            foreach(ISweepstakesManager manager in sweepstakesManagers)
             {
-                case "queue":
-                    SweepstakesQueueManager sweepstakesQueueManager = new SweepstakesQueueManager();
-                    break;
-                case "stack":
-                    SweepStakesStackManager
-                    break;
-                default:
-                    break;
+                manager.GetSweepStakes();
             }
         }
     }
