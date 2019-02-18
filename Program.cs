@@ -14,6 +14,7 @@ namespace SweepStakes
         static void Main(string[] args)
         {
             MarketingFirm marketingFirm;
+
             SweepstakesQueueManager sweepstakesQueueManager = new SweepstakesQueueManager();
             SweepStakesStackManager sweepStakesStackManager = new SweepStakesStackManager();
       
@@ -42,7 +43,7 @@ namespace SweepStakes
                 case "queue":
                     sweepstakesQueueManager.InsertSweepStakes(sweepStakes1);
                     sweepstakesQueueManager.InsertSweepStakes(sweepStakes2);
-                    marketingFirm = new MarketingFirm(sweepstakesQueueManager);
+                    marketingFirm = new MarketingFirm(sweepstakesQueueManager);               
                     break;
                 case "stack":
                     sweepStakesStackManager.InsertSweepStakes(sweepStakes1);

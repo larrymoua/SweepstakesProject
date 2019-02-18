@@ -24,6 +24,7 @@ namespace SweepStakes
             foreach(ISweepstakesManager manager in sweepstakesManagers)
             {
                 manager.GetSweepStakes();
+                
             }
         }
     }
