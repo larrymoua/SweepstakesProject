@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MailKit;
+using MailKit.Net.Smtp;
+using MimeKit;
 
 namespace SweepStakes
 {
@@ -18,14 +21,19 @@ namespace SweepStakes
             Contestant firstContestant = new Contestant();
             Contestant secondContestant = new Contestant();
             Contestant thirdContestant = new Contestant();
+
             SweepStakes sweepStakes1 = new SweepStakes("Bucks");
+            SweepStakes sweepStakes2 = new SweepStakes("Packers");
+
             sweepStakes1.RegisterContestant(firstContestant);
             sweepStakes1.RegisterContestant(secondContestant);
             sweepStakes1.RegisterContestant(thirdContestant);
+            sweepStakes1.PrintContestantInfo();
 
-            SweepStakes sweepStakes2 = new SweepStakes("Packers");
+
             sweepStakes2.RegisterContestant(firstContestant);
             sweepStakes2.RegisterContestant(secondContestant);
+            sweepStakes2.PrintContestantInfo();
 
             string input = UserInterfacecs.GetString("Do you want to use queue or stack manager?");
             input.ToLower();

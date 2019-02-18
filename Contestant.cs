@@ -35,7 +35,10 @@ namespace SweepStakes
             Console.WriteLine($"Last Name : {LastName}");
             Console.WriteLine($"Registration Number : {RegistrationNumber}");
             Console.ReadLine();
-            Console.Clear();
+        }
+        public void GetUpdate(string winorlose)
+        {
+            Console.WriteLine(winorlose);
         }
     }
 }
