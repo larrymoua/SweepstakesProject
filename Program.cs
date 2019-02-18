@@ -10,6 +10,15 @@ namespace SweepStakes
     {
         static void Main(string[] args)
         {
+            Contestant firstContestant = new Contestant();
+            Contestant secondContestant = new Contestant();
+            Contestant thirdContestant = new Contestant();
+            SweepStakes sweepStakes = new SweepStakes("Bucks");
+            sweepStakes.RegisterContestant(firstContestant);
+            sweepStakes.RegisterContestant(secondContestant);
+            sweepStakes.RegisterContestant(thirdContestant);
+            sweepStakes.PrintContestantInfo();
+            
         }
     }
 }
